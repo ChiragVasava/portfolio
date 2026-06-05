@@ -1,695 +1,738 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- ── Metadata ─────────────────────────────────── -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ── Meta ──────────────────────────────────── -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Chirag Vasava — Full Stack Developer, AI Builder &amp; UI Craftsman. Portfolio of MERN, Next.js, FastAPI &amp; Gemini-powered products." />
+  <meta name="author" content="Chirag Vasava" />
+  <meta name="keywords"
+    content="Chirag Vasava, Full Stack Developer, AI Builder, MERN, Next.js, FastAPI, Gemini, React, Portfolio, MSU Baroda, TestForge AI, DayFlow, UniNest AI, RentFlow, PlayLoud, GET ME A CHAI" />
+  <!-- OG -->
+  <meta property="og:title"       content="Chirag Vasava | Full Stack Developer &amp; AI Builder" />
+  <meta property="og:description" content="Building full-stack products and AI-powered pipelines." />
+  <meta property="og:type"        content="website" />
 
-    <!-- SEO -->
-    <meta
-      name="description"
-      content="Chirag Vasava — Full Stack Developer, AI Builder, and UI Craftsman. Portfolio showcasing MERN, Next.js, FastAPI, and Gemini-powered projects."
-    />
-    <meta name="author" content="Chirag Vasava" />
-    <meta
-      name="keywords"
-      content="Chirag Vasava, Full Stack Developer, AI Builder, MERN Stack, Next.js, FastAPI, Gemini API, React Developer, Portfolio, Maharaja Sayajirao University of Baroda, MSU Baroda, TestForge AI, DayFlow, UniNest AI, RentFlow, PlayLoud, GET ME A CHAI"
-    />
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <title>Chirag Vasava | Full Stack Developer &amp; AI Builder</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Chirag Vasava | Full Stack Developer &amp; AI Builder" />
-    <meta
-      property="og:description"
-      content="Building full-stack products and AI-powered pipelines with MERN, Next.js, FastAPI, and Gemini Flash."
-    />
-    <meta property="og:type" content="website" />
+  <!-- ── Fonts ─────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <!-- ── Icons / Devicons ──────────────────────── -->
+  <!-- Font Awesome 6 (replaces broken FA4 + fixes all social icons) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Devicons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-    <!-- Page Title -->
-    <title>Chirag Vasava | Full Stack Developer &amp; AI Builder</title>
+  <!-- ── Stylesheets ──────────────────────────── -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/portfolio.css" />
+</head>
 
-    <!-- ── Stylesheets ───────────────────────────────── -->
-    <!-- Main CSS (from reference template) -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
+<body>
 
-    <!-- Devicons (latest) -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-  </head>
+<!-- ═══════════════════════════════════════════════════════
+     STICKY NAVBAR
+═══════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-brand">&lt;Chirag/&gt;</a>
 
-  <body>
-    <!-- ════════════════════════════════════════════════════════════
-         HERO SECTION — #particles-js background hook preserved
-    ════════════════════════════════════════════════════════════ -->
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">CHIRAG VASAVA</span>
-          <span class="site-description"
-            >Full Stack Developer&nbsp;&bull;&nbsp;AI Builder&nbsp;&bull;&nbsp;UI Craftsman</span
-          >
-        </h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
 
-        <!-- Social / Contact Icons -->
-        <div class="header-icons">
-          <a
-            aria-label="My LinkedIn Profile"
-            target="_blank"
-            href="https://www.linkedin.com/in/chirag-vasava-050784273/"
-          >
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My GitHub Profile"
-            target="_blank"
-            href="https://github.com/ChiragVasava"
-          >
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My LeetCode Profile"
-            target="_blank"
-            href="https://leetcode.com/u/ChiragVasava/"
-          >
-            <i class="icon fa fa-code" aria-hidden="true"></i>
-          </a>
-          <a
-            aria-label="My R&eacute;sum&eacute;"
-            target="_blank"
-            href="./assets/Chirag_Vasava.pdf"
-          >
-            <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:v.chira.007@gmail.com" target="_blank">
-            <i class="icon fa fa-envelope"></i>
-          </a>
-        </div>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+        <!-- Sun (shown in dark mode → click to go light) -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1"  x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22"  x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1"  y1="12" x2="3"  y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22"  y1="19.78" x2="5.64"  y2="18.36"/>
+          <line x1="18.36" y1="5.64"  x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon (shown in light mode → click to go dark) -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
 
-        <!-- Navigation Links -->
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
-        </div>
-      </div>
+<!-- ═══════════════════════════════════════════════════════
+     HERO — #particles-js hook preserved
+═══════════════════════════════════════════════════════ -->
+<div id="particles-js" id="home">
+  <div class="hero-content">
+    <p class="hero-greeting">Hi there! I am</p>
+    <h1 class="hero-title">
+      <span class="name-highlight">Chirag Vasava</span>
+    </h1>
+    <p class="hero-subtitle">Full Stack Developer &bull; AI Builder &bull; UI Craftsman</p>
 
-      <!-- Scroll-down chevron -->
-      <a class="down" href="#about" data-scroll>
-        <i class="icon fa fa-chevron-down" aria-hidden="true"></i>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/chirag-vasava-050784273/" target="_blank"
+         aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/ChiragVasava" target="_blank" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://leetcode.com/u/ChiragVasava/" target="_blank" aria-label="LeetCode">
+        <i class="fa-solid fa-code"></i>
+      </a>
+      <a href="mailto:v.chira.007@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
       </a>
     </div>
 
-    <!-- ════════════════════════════════════════════════════════════
-         ABOUT SECTION — "My Story"
-    ════════════════════════════════════════════════════════════ -->
-    <section id="about">
-      <!-- Narrative bio -->
-      <div class="user-details">
-        <h1>My Story</h1>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Chirag Vasava"
-            width="20%"
-            style="border-radius: 50%"
-          />
-          <img
-            src="./assets/img/jpg/Professional-Picture-Me.jpg"
-            alt="Chirag Vasava"
-            width="20%"
-            style="border-radius: 50%"
-          />
-        </picture>
-        <p>
-          I&rsquo;m a <strong>Computer Science &amp; Engineering</strong> student at
-          <strong>Maharaja Sayajirao University of Baroda</strong> (2024&ndash;2027),
-          building on a strong Diploma in Information Technology foundation from
-          Parul University. My engineering work lives at the intersection of
-          full-stack architecture and programmatic AI &mdash; I design and ship
-          production-grade platforms with <strong>MERN</strong>, <strong>Next.js</strong>,
-          and <strong>FastAPI</strong>, then wire them to intelligent pipelines powered by
-          <strong>Gemini Flash</strong>, Python AST sandboxes, and LLM-native tooling.
-          I believe every product should feel as smart as it looks, which is why I obsess
-          equally over system design depth and interface craftsmanship.
-          Beyond code, I drove an engineering team to victory at
-          <strong>Hack-A-Throne 2025</strong> as Team Leader &mdash; a competitive proving
-          ground that sharpened my instinct for shipping fast, shipping clean, and
-          shipping things that actually matter.
-        </p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">
+        <i class="fa-solid fa-rocket"></i> View Projects
+      </a>
+      <a href="./assets/Chirag_Vasava.pdf" target="_blank" class="btn-secondary">
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
+      </a>
+    </div>
+  </div>
+
+  <a class="hero-scroll-down" href="#about">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     ABOUT — "My Story"
+═══════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="section-inner">
+    <h2 class="section-title">My Story</h2>
+
+    <div class="about-grid">
+      <div class="about-avatar-wrap">
+        <img
+          src="./assets/img/jpg/Professional-Picture-Me.png"
+          alt="Chirag Vasava"
+          class="about-avatar"
+          onerror="this.src='./assets/img/webp/Professional-Picture-Me.webp'"
+        />
+        <span class="about-badge">
+          <span class="dot"></span> Open to Work
+        </span>
       </div>
 
-      <!-- ── 4-Column Tech Matrix ─────────────────────── -->
-      <div class="user">
+      <div class="about-text">
+        <h2>Building Products at the Intersection of Full-Stack &amp; AI</h2>
+        <p>
+          I'm a <strong>Computer Science &amp; Engineering</strong> student at
+          <strong>Maharaja Sayajirao University of Baroda</strong> (2024–2027),
+          building on a strong Diploma in IT foundation from Parul University.
+        </p>
+        <p>
+          My engineering work lives at the intersection of full-stack architecture
+          and programmatic AI — I design and ship production-grade platforms with
+          <strong>MERN</strong>, <strong>Next.js</strong>, and <strong>FastAPI</strong>,
+          then wire them to intelligent pipelines powered by <strong>Gemini Flash</strong>,
+          Python AST sandboxes, and LLM-native tooling.
+        </p>
+        <p>
+          I believe every product should feel as smart as it looks, which is why I obsess
+          equally over system design depth and interface craftsmanship. Beyond code, I led
+          an engineering team at <strong>Hack-A-Throne 2025</strong> as Team Leader — a
+          competitive proving ground that sharpened my instinct for shipping fast, clean,
+          and things that actually matter.
+        </p>
+      </div>
+    </div>
 
-        <!-- Column 1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
+    <!-- 4-Column Tech Matrix -->
+    <div class="tech-matrix">
+
+      <!-- Languages -->
+      <div class="tech-card fade-in">
+        <h3>Languages</h3>
+        <div class="tech-icons">
           <i class="devicon-java-plain colored" title="Java"></i>
           <i class="devicon-javascript-plain colored" title="JavaScript"></i>
           <i class="devicon-python-plain colored" title="Python"></i>
           <i class="devicon-c-plain colored" title="C"></i>
           <i class="devicon-cplusplus-plain colored" title="C++"></i>
-          <p>
-            Core languages powering systems logic, AI pipelines, and full-stack
-            product delivery from front to back.
-          </p>
         </div>
+        <p>Core languages powering systems logic, AI pipelines, and full-stack delivery.</p>
+      </div>
 
-        <!-- Column 2: Front-End -->
-        <div class="tech">
-          <h2>Front-End</h2>
+      <!-- Front-End -->
+      <div class="tech-card fade-in">
+        <h3>Front-End</h3>
+        <div class="tech-icons">
           <i class="devicon-react-original colored" title="React.js"></i>
           <i class="devicon-nextjs-plain colored" title="Next.js"></i>
           <i class="devicon-html5-plain-wordmark colored" title="HTML5"></i>
           <i class="devicon-css3-plain-wordmark colored" title="CSS3"></i>
           <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS"></i>
           <i class="devicon-bootstrap-plain-wordmark colored" title="Bootstrap"></i>
-          <p>
-            My toolkit for building performant, accessible, and visually
-            precise interfaces &mdash; from component atoms to design systems.
-          </p>
         </div>
+        <p>Toolkit for performant, accessible, visually precise interfaces.</p>
+      </div>
 
-        <!-- Column 3: Back-End & DB -->
-        <div class="tech">
-          <h2>Back-End &amp; DB</h2>
+      <!-- Back-End & DB -->
+      <div class="tech-card fade-in">
+        <h3>Back-End &amp; DB</h3>
+        <div class="tech-icons">
           <i class="devicon-nodejs-plain colored" title="Node.js"></i>
           <i class="devicon-express-original colored" title="Express.js"></i>
           <i class="devicon-fastapi-plain colored" title="FastAPI"></i>
-          <i class="devicon-prisma-original colored" title="Prisma ORM"></i>
+          <i class="devicon-prisma-original colored" title="Prisma"></i>
           <i class="devicon-mongodb-plain-wordmark colored" title="MongoDB"></i>
           <i class="devicon-postgresql-plain-wordmark colored" title="PostgreSQL"></i>
           <i class="devicon-mysql-plain-wordmark colored" title="MySQL"></i>
-          <p>
-            The runtime and data layer behind my products &mdash; REST APIs,
-            ORM-driven schemas, and AI inference servers.
-          </p>
         </div>
+        <p>REST APIs, ORM-driven schemas, and AI inference servers.</p>
+      </div>
 
-        <!-- Column 4: Tools & DevOps -->
-        <div class="tech">
-          <h2>Tools &amp; DevOps</h2>
+      <!-- Tools & DevOps -->
+      <div class="tech-card fade-in">
+        <h3>Tools &amp; DevOps</h3>
+        <div class="tech-icons">
           <i class="devicon-git-plain-wordmark colored" title="Git"></i>
           <i class="devicon-github-plain-wordmark colored" title="GitHub"></i>
           <i class="devicon-docker-plain-wordmark colored" title="Docker"></i>
           <i class="devicon-postman-plain colored" title="Postman"></i>
           <i class="devicon-playwright-plain colored" title="Playwright"></i>
-          <p>
-            My delivery toolchain &mdash; CI/CD automation, container
-            orchestration, API testing, and Gemini AI integrations.
-          </p>
         </div>
-
-      </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════════════
-         PROJECTS SECTION — 6-project alternating grid
-         Pattern: odd = image-right / even = image-left
-    ════════════════════════════════════════════════════════════ -->
-    <section id="projects">
-      <div class="user-details">
-        <h1>Featured Projects</h1>
+        <p>CI/CD automation, containers, API testing &amp; Gemini AI integrations.</p>
       </div>
 
-      <!-- ── #1 TestForge AI ── (contents left, image right) -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/jpg/testforge-ai.jpg"
-              alt="TestForge AI — Intelligent Test Automation Platform"
-            />
-            <img
-              alt="TestForge AI — Intelligent Test Automation Platform"
-              src="./assets/img/jpg/testforge-ai.jpg"
-            />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>TestForge AI</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     EXPERIENCE
+═══════════════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="section-inner">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-grid">
+
+      <div class="exp-card fade-in">
+        <div class="exp-card-header">
+          <div class="exp-icon">🏆</div>
           <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/python.svg"
-              style="filter: invert(58%) sepia(62%) saturate(600%) hue-rotate(170deg) brightness(110%) contrast(90%)"
-              title="Python"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/fastapi.svg"
-              style="filter: invert(55%) sepia(90%) saturate(400%) hue-rotate(130deg) brightness(110%) contrast(90%)"
-              title="FastAPI"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/next-dot-js.svg"
-              style="filter: invert(100%)"
-              title="Next.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/google.svg"
-              style="filter: invert(40%) sepia(80%) saturate(600%) hue-rotate(190deg) brightness(120%) contrast(90%)"
-              title="Gemini API"
-            />
+            <div class="exp-card-title">Team Leader</div>
+            <div class="exp-card-org">Hack-A-Throne 2025</div>
           </div>
-          <p style="text-align: justify">
-            <strong>The Challenge:</strong> High manual overhead in writing software unit
-            test suites and identifying edge cases consumed engineering cycles better spent
-            on feature velocity.<br /><br />
-            <strong>The Solution:</strong> Built an intelligent QA pipeline leveraging
-            Python AST parsing sandboxes and <em>Gemini 2.5 Flash</em> to automatically
-            generate custom Playwright scripts from plain English test descriptions. FastAPI
-            serves the inference layer while Next.js provides the developer dashboard.<br /><br />
-            <strong>The Impact:</strong> Created an automated line-level CI/CD safety check
-            engine that isolates risk factors prior to code delivery &mdash; dramatically
-            compressing the test-authoring loop.
-          </p>
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/ChiragVasava/TestForge-AI"
-            >Check it out!</a
-          >
-          &nbsp;&nbsp;
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://testforge-ai-lime.vercel.app/"
-            >Live Demo &rarr;</a
-          >
+        </div>
+        <div class="exp-card-date">2025 &mdash; Hackathon</div>
+        <div class="exp-card-desc">
+          Led an engineering team in rapid AI prototype construction under competitive
+          pressure. Drove product decisions, architecture design, and delivery within
+          tight deadlines — sharpening instincts for shipping fast without sacrificing quality.
         </div>
       </div>
 
-      <!-- ── #2 DayFlow ── (image left, contents right) -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/jpg/dayflow.jpg"
-              alt="DayFlow — MERN HRMS Platform"
-            />
-            <img alt="DayFlow — MERN HRMS Platform" src="./assets/img/jpg/dayflow.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>DayFlow</h3>
+      <div class="exp-card fade-in">
+        <div class="exp-card-header">
+          <div class="exp-icon">🤖</div>
           <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/mongodb.svg"
-              style="filter: invert(55%) sepia(70%) saturate(500%) hue-rotate(100deg) brightness(110%) contrast(90%)"
-              title="MongoDB"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/express.svg"
-              style="filter: invert(90%)"
-              title="Express.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-              title="React.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/node-dot-js.svg"
-              style="filter: invert(55%) sepia(70%) saturate(500%) hue-rotate(80deg) brightness(110%) contrast(90%)"
-              title="Node.js"
-            />
+            <div class="exp-card-title">AI Platform Builder</div>
+            <div class="exp-card-org">Independent Projects</div>
           </div>
-          <p style="text-align: justify">
-            <strong>The Challenge:</strong> Fragmented employee tracking systems were
-            creating administrative operational lag &mdash; check-in records lived in
-            spreadsheets, payroll in a separate tool, and leave balances tracked
-            manually.<br /><br />
-            <strong>The Solution:</strong> Constructed a secure full-stack MERN HR
-            Management platform complete with JWT role-based access views, a real-time
-            attendance calendar, and an automated payroll calculation engine.<br /><br />
-            <strong>The Impact:</strong> Completely streamlined employee check-in flows,
-            unified automated payroll calculations, and centralized balance deduction
-            charts onto clean analytics views &mdash; eliminating cross-tool context
-            switching for HR teams.
-          </p>
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/ChiragVasava/DayFlow"
-            >Check it out!</a
-          >
-          &nbsp;&nbsp;
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://day-flow-eight.vercel.app/"
-            >Live Demo &rarr;</a
-          >
+        </div>
+        <div class="exp-card-date">2024 &mdash; Present</div>
+        <div class="exp-card-desc">
+          Designed and shipped 6 production-grade full-stack products integrating
+          Gemini Flash, FastAPI inference pipelines, Prisma ORM schemas, and
+          Razorpay payment gateways — each deployed live on Vercel.
         </div>
       </div>
 
-      <!-- ── #3 UniNest AI ── (contents left, image right) -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/jpg/uninest-ai.jpg"
-              alt="UniNest AI — Campus Recruitment OS"
-            />
-            <img
-              alt="UniNest AI — Campus Recruitment OS"
-              src="./assets/img/jpg/uninest-ai.jpg"
-            />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>UniNest AI</h3>
+      <div class="exp-card fade-in">
+        <div class="exp-card-header">
+          <div class="exp-icon">🎓</div>
           <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/next-dot-js.svg"
-              style="filter: invert(100%)"
-              title="Next.js 15"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/postgresql.svg"
-              style="filter: invert(40%) sepia(60%) saturate(600%) hue-rotate(195deg) brightness(110%) contrast(90%)"
-              title="PostgreSQL"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/prisma.svg"
-              style="filter: invert(100%)"
-              title="Prisma ORM"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/google.svg"
-              style="filter: invert(60%) sepia(80%) saturate(600%) hue-rotate(250deg) brightness(120%) contrast(90%)"
-              title="Gemini API"
-            />
+            <div class="exp-card-title">Full Stack Developer</div>
+            <div class="exp-card-org">MERN &amp; Next.js Ecosystem</div>
           </div>
-          <p style="text-align: justify">
-            <strong>The Challenge:</strong> Chaotic spreadsheet management during collegiate
-            recruitment drives caused missed deadlines, lost applicant data, and zero
-            centralized visibility into placement lifecycle status.<br /><br />
-            <strong>The Solution:</strong> Orchestrated a <em>Next.js 15</em> placement
-            platform using Prisma ORM and PostgreSQL to track drive lifecycle status with
-            full relational integrity &mdash; from drive creation through offer
-            acceptance.<br /><br />
-            <strong>The Impact:</strong> Built a programmatic Gemini-powered ATS resume
-            matching score layer that automates qualification processing for applications,
-            turning manual shortlisting into an intelligent, auditable pipeline.
-          </p>
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/ChiragVasava/UniNest-AI"
-            >Check it out!</a
-          >
-          &nbsp;&nbsp;
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://uninest-mu.vercel.app/"
-            >Live Demo &rarr;</a
-          >
+        </div>
+        <div class="exp-card-date">2023 &mdash; Present</div>
+        <div class="exp-card-desc">
+          Architected scalable HR management systems, campus placement platforms,
+          and ERP rental portals with JWT authentication, role-based access control,
+          and real-time analytics dashboards.
         </div>
       </div>
 
-      <!-- ── #4 RentFlow ── (image left, contents right) -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/jpg/rentflow.jpg"
-              alt="RentFlow — ERP Equipment Rental Portal"
-            />
-            <img
-              alt="RentFlow — ERP Equipment Rental Portal"
-              src="./assets/img/jpg/rentflow.jpg"
-            />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>RentFlow</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-              title="React.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/node-dot-js.svg"
-              style="filter: invert(55%) sepia(70%) saturate(500%) hue-rotate(80deg) brightness(110%) contrast(90%)"
-              title="Node.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/razorpay.svg"
-              style="filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(185deg) brightness(110%) contrast(90%)"
-              title="Razorpay"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/mongodb.svg"
-              style="filter: invert(55%) sepia(70%) saturate(500%) hue-rotate(100deg) brightness(110%) contrast(90%)"
-              title="MongoDB"
-            />
-          </div>
-          <p style="text-align: justify">
-            <strong>The Challenge:</strong> Complex multi-tenant coordination in traditional
-            equipment rental models &mdash; vendors, customers, and admins operating without
-            a unified order-state view created billing disputes and inventory
-            blind spots.<br /><br />
-            <strong>The Solution:</strong> Developed an ERP-style order tracking lifecycle
-            portal with role-differentiated dashboards for vendors, customers, and admins
-            &mdash; backed by a Razorpay payment integration for real-time booking
-            confirmations.<br /><br />
-            <strong>The Impact:</strong> Automated complex booking availability checks,
-            multi-role vendor action workflows, and instant invoice sheet creation &mdash;
-            replacing manual coordination with a single source of truth.
-          </p>
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/ChiragVasava/RentFlow"
-            >Check it out!</a
-          >
-          &nbsp;&nbsp;
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://rent-flow-theta.vercel.app/"
-            >Live Demo &rarr;</a
-          >
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     EDUCATION
+═══════════════════════════════════════════════════════ -->
+<section id="education">
+  <div class="section-inner">
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-list">
+
+      <div class="edu-card fade-in">
+        <div class="edu-icon">🏛️</div>
+        <div class="edu-body">
+          <div class="edu-degree">Bachelor of Engineering — Computer Science &amp; Engineering</div>
+          <div class="edu-inst">Maharaja Sayajirao University of Baroda</div>
+          <div class="edu-date">2024 &mdash; 2027</div>
+          <div class="edu-field">Deep focus on full-stack systems, AI/ML pipelines, and scalable architecture.</div>
         </div>
       </div>
 
-      <!-- ── #5 PlayLoud ── (contents left, image right) -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/jpg/playloud.jpg"
-              alt="PlayLoud — Web Audio Streaming Platform"
-            />
-            <img
-              alt="PlayLoud — Web Audio Streaming Platform"
-              src="./assets/img/jpg/playloud.jpg"
-            />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>PlayLoud</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/next-dot-js.svg"
-              style="filter: invert(100%)"
-              title="Next.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/appwrite.svg"
-              style="filter: invert(60%) sepia(70%) saturate(600%) hue-rotate(320deg) brightness(110%) contrast(90%)"
-              title="Appwrite"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/razorpay.svg"
-              style="filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(185deg) brightness(110%) contrast(90%)"
-              title="Razorpay"
-            />
-          </div>
-          <p style="text-align: justify">
-            <strong>The Challenge:</strong> Interrupted listening states and complicated
-            subscription processing on standard media platforms created friction that broke
-            immersion &mdash; users couldn&rsquo;t pick up where they left off without
-            re-navigating through multiple layers.<br /><br />
-            <strong>The Solution:</strong> Designed a fluid web audio layer using
-            <em>Appwrite</em> cloud storage services for media management, with premium
-            subscription hooks powered by Razorpay and persistent playback state managed
-            on the client.<br /><br />
-            <strong>The Impact:</strong> Delivered persistent UI performance playback and
-            customized user playlist caching smoothly &mdash; creating a seamless,
-            interruption-free listening experience with instant session restoration.
-          </p>
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/ChiragVasava/PlayLoud"
-            >Check it out!</a
-          >
-          &nbsp;&nbsp;
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://play-loud-azure.vercel.app/"
-            >Live Demo &rarr;</a
-          >
+      <div class="edu-card fade-in">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <div class="edu-degree">Diploma in Information Technology</div>
+          <div class="edu-inst">Parul University</div>
+          <div class="edu-date">2021 &mdash; 2024</div>
+          <div class="edu-field">Foundation in software engineering, databases, networking &amp; web technologies.</div>
         </div>
       </div>
 
-      <!-- ── #6 GET-ME-A-CHAI ── (image left, contents right) -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/jpg/getmeachai.jpg"
-              alt="GET ME A CHAI — Creator Crowdfunding Platform"
-            />
-            <img
-              alt="GET ME A CHAI — Creator Crowdfunding Platform"
-              src="./assets/img/jpg/getmeachai.jpg"
-            />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>GET ME A CHAI</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/next-dot-js.svg"
-              style="filter: invert(100%)"
-              title="Next.js"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/razorpay.svg"
-              style="filter: invert(45%) sepia(80%) saturate(500%) hue-rotate(185deg) brightness(110%) contrast(90%)"
-              title="Razorpay"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg"
-              style="filter: invert(100%)"
-              title="Open Source"
-            />
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     PROJECTS — 2-column card grid (no screenshots)
+═══════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-inner">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- ── #1 TestForge AI ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">⚡</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">TestForge AI</div>
+            <div class="pc-category">Intelligent Test Automation Platform</div>
           </div>
-          <p style="text-align: justify">
-            <strong>The Challenge:</strong> Friction-heavy support paths were blocking simple
-            independent creator tip flows &mdash; existing platforms imposed high fee
-            structures, lengthy KYC delays, and complex dashboards that discouraged
-            casual micro-donations.<br /><br />
-            <strong>The Solution:</strong> Produced a decoupled crowdfunding checkout
-            utility built on Next.js, optimized for direct micro-donations through a
-            streamlined Razorpay payment gateway integration &mdash; no intermediary
-            complexity, just creator to supporter.<br /><br />
-            <strong>The Impact:</strong> Removed financial middleware steps to give
-            developers and creators immediate payment confirmations &mdash; making
-            supporter appreciation as frictionless as sending a message.
-          </p>
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://github.com/ChiragVasava/GET-ME-A-CHAI"
-            >Check it out!</a
-          >
-          &nbsp;&nbsp;
-          <a
-            class="project-link"
-            target="_blank"
-            href="https://get-me-a-chai-one.vercel.app/"
-            >Live Demo &rarr;</a
-          >
+        </div>
+
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" /> Python
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" /> FastAPI
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js"
+              style="background:#1a2233;border-radius:2px;" /> Next.js
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/playwright/2EAD33" alt="Playwright" /> Playwright
+          </span>
+          <span class="pc-tech-badge">✦ Gemini 2.5</span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Challenge:</span> High manual overhead in writing unit test suites
+          consumed engineering cycles better spent on features.<br /><br />
+          <span class="label">Solution:</span> Built an intelligent QA pipeline using Python AST
+          parsing sandboxes and Gemini 2.5 Flash to auto-generate Playwright scripts from plain
+          English descriptions.<br /><br />
+          <span class="label">Impact:</span> Created an automated CI/CD safety check engine that
+          isolates risk factors prior to code delivery.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/TestForge-AI" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://testforge-ai-lime.vercel.app/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
         </div>
       </div>
 
-    </section>
+      <!-- ── #2 DayFlow ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">📅</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">DayFlow</div>
+            <div class="pc-category">MERN HR Management System</div>
+          </div>
+        </div>
 
-    <!-- ════════════════════════════════════════════════════════════
-         FOOTER
-    ════════════════════════════════════════════════════════════ -->
-    <footer class="footer">
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" /> MongoDB
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/express/ffffff"  alt="Express"
+              style="background:#1a2233;border-radius:2px;" /> Express
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /> React
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" /> Node.js
+          </span>
+          <span class="pc-tech-badge">🔐 JWT</span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Challenge:</span> Fragmented employee tracking systems created
+          administrative lag — check-ins in spreadsheets, payroll in a separate tool.<br /><br />
+          <span class="label">Solution:</span> Constructed a secure full-stack MERN HRMS with JWT
+          role-based access, real-time attendance calendar, and automated payroll engine.<br /><br />
+          <span class="label">Impact:</span> Streamlined check-in flows, unified payroll, and
+          centralized balance deduction charts — eliminating cross-tool context switching.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/DayFlow" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://day-flow-eight.vercel.app/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- ── #3 UniNest AI ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">🎓</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">UniNest AI</div>
+            <div class="pc-category">Campus Recruitment OS</div>
+          </div>
+        </div>
+
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js"
+              style="background:#1a2233;border-radius:2px;" /> Next.js 15
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" /> PostgreSQL
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/prisma/2D3748" alt="Prisma"
+              style="background:#e2e8f0;border-radius:2px;" /> Prisma
+          </span>
+          <span class="pc-tech-badge">✦ Gemini ATS</span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Challenge:</span> Chaotic spreadsheet management during collegiate
+          recruitment drives caused missed deadlines and lost applicant data.<br /><br />
+          <span class="label">Solution:</span> Orchestrated a Next.js 15 placement platform using
+          Prisma ORM and PostgreSQL to track full drive lifecycle — creation through offer
+          acceptance.<br /><br />
+          <span class="label">Impact:</span> Gemini-powered ATS resume matching automates
+          qualification processing, turning manual shortlisting into an intelligent, auditable pipeline.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/UniNest-AI" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://uninest-mu.vercel.app/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- ── #4 RentFlow ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">🏭</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">RentFlow</div>
+            <div class="pc-category">ERP Equipment Rental Portal</div>
+          </div>
+        </div>
+
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" /> React
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js" /> Node.js
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/razorpay/02042B" alt="Razorpay"
+              style="background:#e2e8f0;border-radius:2px;" /> Razorpay
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB" /> MongoDB
+          </span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Challenge:</span> Complex multi-tenant coordination in equipment
+          rental — vendors, customers, and admins without a unified order-state view created
+          billing disputes.<br /><br />
+          <span class="label">Solution:</span> ERP-style portal with role-differentiated dashboards
+          and Razorpay integration for real-time booking confirmations.<br /><br />
+          <span class="label">Impact:</span> Automated booking checks, multi-role vendor workflows,
+          and instant invoice creation — replacing manual coordination with a single truth source.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/RentFlow" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://rent-flow-theta.vercel.app/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- ── #5 PlayLoud ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">🎵</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">PlayLoud</div>
+            <div class="pc-category">Web Audio Streaming Platform</div>
+          </div>
+        </div>
+
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js"
+              style="background:#1a2233;border-radius:2px;" /> Next.js
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/appwrite/F02E65" alt="Appwrite" /> Appwrite
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/razorpay/02042B" alt="Razorpay"
+              style="background:#e2e8f0;border-radius:2px;" /> Razorpay
+          </span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Challenge:</span> Interrupted listening states and complex subscription
+          processing on standard media platforms created immersion-breaking friction.<br /><br />
+          <span class="label">Solution:</span> Fluid web audio layer using Appwrite cloud storage
+          for media management, premium Razorpay subscription hooks, and persistent client-side
+          playback state.<br /><br />
+          <span class="label">Impact:</span> Persistent playback and customized playlist caching —
+          a seamless, interruption-free experience with instant session restoration.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/PlayLoud" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://play-loud-azure.vercel.app/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- ── #6 GET-ME-A-CHAI ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">☕</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">GET ME A CHAI</div>
+            <div class="pc-category">Creator Crowdfunding Platform</div>
+          </div>
+        </div>
+
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js"
+              style="background:#1a2233;border-radius:2px;" /> Next.js
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/razorpay/02042B" alt="Razorpay"
+              style="background:#e2e8f0;border-radius:2px;" /> Razorpay
+          </span>
+          <span class="pc-tech-badge">⚡ Micro-payments</span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Challenge:</span> Friction-heavy support paths blocked simple creator
+          tip flows — high fees, KYC delays, and complex dashboards discouraged micro-donations.<br /><br />
+          <span class="label">Solution:</span> Decoupled crowdfunding checkout utility built on
+          Next.js, optimized for direct micro-donations through a streamlined Razorpay
+          integration.<br /><br />
+          <span class="label">Impact:</span> Removed financial middleware steps — giving creators
+          immediate payment confirmations and making supporter appreciation as frictionless as
+          sending a message.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/GET-ME-A-CHAI" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://get-me-a-chai-one.vercel.app/" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="section-inner">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-inner">
+      <h2>Let's Build Something Together</h2>
       <p>
-        &copy; Chirag Vasava, 2025 &mdash; Built with
-        <span style="color: #e25555">&hearts;</span> and a lot of chai &#9749;
+        Whether it's a full-stack product, an AI-powered pipeline, or just a great conversation
+        about technology — my inbox is always open.
       </p>
-    </footer>
+      <a href="mailto:v.chira.007@gmail.com" class="contact-email-btn">
+        <i class="fa-solid fa-paper-plane"></i> Say Hello
+      </a>
+    </div>
+  </div>
+</section>
 
-    <!-- ── Script dependencies (preserved from reference template) ── -->
-    <!-- Particle.js background -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Sweet Scroll smooth-scroll library -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Main initialization script (particles config + scroll init) -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER — dual-column
+═══════════════════════════════════════════════════════ -->
+<footer id="site-footer">
+  <div class="footer-inner">
+
+    <!-- Left: bio + socials -->
+    <div class="footer-left">
+      <div class="footer-name">&lt;Chirag Vasava /&gt;</div>
+      <div class="footer-tagline">Full Stack Developer &amp; AI Builder · MSU Baroda</div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/chirag-vasava-050784273/" target="_blank"
+           aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ChiragVasava" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:v.chira.007@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://leetcode.com/u/ChiragVasava/" target="_blank" aria-label="LeetCode">
+          <i class="fa-solid fa-code"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: avatar -->
+    <div class="footer-right">
+      <img
+        src="./assets/img/jpg/Professional-Picture-Me.png"
+        alt="Chirag Vasava"
+        class="footer-avatar"
+        onerror="this.src='./assets/img/webp/Professional-Picture-Me.webp'"
+      />
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      Made with <span class="heart">❤️</span> by Chirag &nbsp;&bull;&nbsp;
+      &copy; 2025 Chirag Vasava &nbsp;&bull;&nbsp; Handcrafted with passion ☕
+    </p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════════════════ -->
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- Sweet Scroll -->
+<script src="./assets/js/sweet-scroll.min.js"></script>
+<!-- Google Analytics -->
+<script src="./assets/js/google-analytics.js"></script>
+<!-- Main (particles init) -->
+<script src="./assets/js/main.js"></script>
+
+<script>
+/* ── Dark / Light Theme Toggle ─────────────────────────── */
+(function () {
+  const root    = document.documentElement;
+  const btn     = document.getElementById('theme-toggle');
+  const STORAGE = 'cv-theme';
+
+  // Restore saved preference
+  const saved = localStorage.getItem(STORAGE);
+  if (saved) root.setAttribute('data-theme', saved);
+
+  btn.addEventListener('click', () => {
+    const current = root.getAttribute('data-theme') || 'dark';
+    const next    = current === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem(STORAGE, next);
+  });
+})();
+
+/* ── Scroll-triggered fade-in ─────────────────────────── */
+(function () {
+  const els = document.querySelectorAll('.fade-in');
+  const io  = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+})();
+
+/* ── Navbar hide-on-scroll-up, show-on-scroll-down ───── */
+(function () {
+  let last = 0;
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    nav.style.transform = (y > last && y > 80) ? 'translateY(-100%)' : 'translateY(0)';
+    nav.style.transition = 'transform 0.3s ease';
+    last = y;
+  });
+})();
+</script>
+
+</body>
 </html>
