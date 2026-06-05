@@ -1,0 +1,34 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Raw source screenshots (large originals — processed versions already committed)
+assets/img/jpg/DayFlow - HRMS.png
+assets/img/jpg/Get ME A Chai HomePage.png
+assets/img/jpg/PlayLoud.png
+assets/img/jpg/RentFlow - Rental Management System.png
+assets/img/jpg/TestForge HomePage.png
+assets/img/jpg/TestForge Project Space.png
+assets/img/jpg/UniNest - Campus Recruitment Platform.png
+assets/img/jpg/Professional-Picture-Me.png
+
+# Old reference template images not used in portfolio
+assets/img/jpg/COVID19-Tracker-App.jpg
+assets/img/jpg/Perpetual-Crusades.jpg
+assets/img/jpg/Personal-Resume-Website.jpg
+assets/img/jpg/Valuto-Account-Management.jpg
+assets/img/jpg/Old.jpg
+
+# Old reference webp images not used in portfolio
+assets/img/webp/COVID19-Tracker-App.webp
+assets/img/webp/Perpetual-Crusades.webp
+assets/img/webp/Personal-Resume-Website.webp
+assets/img/webp/Valuto-Account-Management.webp
+
+# Stray docs that ended up in assets
+assets/DayFlow README.md
+
+# Node
+node_modules/
+.env
