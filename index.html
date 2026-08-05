@@ -10,10 +10,12 @@
   <meta name="author" content="Chirag Vasava" />
   <meta name="keywords"
     content="Chirag Vasava, Full Stack Developer, AI Builder, MERN, Next.js, FastAPI, Gemini, React, Portfolio, MSU Baroda, TestForge AI, DayFlow, UniNest AI, RentFlow, PlayLoud, GET ME A CHAI" />
+  <link rel="canonical" href="https://chiragvasava.me/" />
   <!-- OG -->
   <meta property="og:title"       content="Chirag Vasava | Full Stack Developer &amp; AI Builder" />
   <meta property="og:description" content="Building full-stack products and AI-powered pipelines." />
   <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://chiragvasava.me/" />
 
   <link rel="shortcut icon" href="./assets/img/favicon.ico" />
   <title>Chirag Vasava | Full Stack Developer &amp; AI Builder</title>
@@ -88,14 +90,18 @@
     <p class="hero-subtitle">Full Stack Developer &bull; AI Builder &bull; UI Craftsman</p>
 
     <div class="hero-socials">
-      <a href="https://www.linkedin.com/in/chirag-vasava-050784273/" target="_blank"
+      <a href="https://chiragvasava.me" target="_blank" rel="noopener noreferrer"
+         aria-label="Website" title="chiragvasava.me Profile Website">
+        <i class="fa-solid fa-globe"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/chirag-vasava-050784273/" target="_blank" rel="noopener noreferrer"
          aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
-      <a href="https://github.com/ChiragVasava" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/ChiragVasava" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
         <i class="fa-brands fa-github"></i>
       </a>
-      <a href="https://leetcode.com/u/ChiragVasava/" target="_blank" aria-label="LeetCode">
+      <a href="https://leetcode.com/u/ChiragVasava/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
         <i class="fa-solid fa-code"></i>
       </a>
       <a href="mailto:v.chira.007@gmail.com" aria-label="Email">
@@ -154,10 +160,10 @@
         </p>
         <p>
           I believe every product should feel as smart as it looks, which is why I obsess
-          equally over system design depth and interface craftsmanship. Beyond code, I led
-          an engineering team at <strong>Hack-A-Throne 2025</strong> as Team Leader — a
-          competitive proving ground that sharpened my instinct for shipping fast, clean,
-          and things that actually matter.
+          equally over system design depth and interface craftsmanship. Beyond code, I actively
+          compete in hackathons — leading engineering teams at <strong>Hack-A-Throne 2025</strong>
+          and advancing as an Offline Finalist at the <strong>Odoo &times; GCET Hackathon 2026</strong>
+          (building <em>RentFlow</em> out of thousands of virtual competitors).
         </p>
       </div>
     </div>
@@ -241,11 +247,27 @@
             <div class="exp-card-org">Hack-A-Throne 2025</div>
           </div>
         </div>
-        <div class="exp-card-date">2025 &mdash; Hackathon</div>
+        <div class="exp-card-date">2025 &mdash; AI Hackathon</div>
         <div class="exp-card-desc">
           Led an engineering team in rapid AI prototype construction under competitive
           pressure. Drove product decisions, architecture design, and delivery within
           tight deadlines — sharpening instincts for shipping fast without sacrificing quality.
+        </div>
+      </div>
+
+      <div class="exp-card fade-in">
+        <div class="exp-card-header">
+          <div class="exp-icon">🚀</div>
+          <div>
+            <div class="exp-card-title">Offline Finalist &amp; Co-Developer</div>
+            <div class="exp-card-org">Odoo &times; GCET Hackathon 2026</div>
+          </div>
+        </div>
+        <div class="exp-card-date">2026 &mdash; Hackathon (Built RentFlow)</div>
+        <div class="exp-card-desc">
+          Selected among thousands of virtual participants to compete in offline finals. Designed &amp; built
+          <strong>RentFlow</strong> — a full-stack ERP rental platform featuring time-based pricing, anti-overbooking logic,
+          and Razorpay payment gateway integration under real deadline constraints.
         </div>
       </div>
 
@@ -261,7 +283,7 @@
         <div class="exp-card-desc">
           Designed and shipped 6 production-grade full-stack products integrating
           Gemini Flash, FastAPI inference pipelines, Prisma ORM schemas, and
-          Razorpay payment gateways — each deployed live on Vercel.
+          Razorpay payment gateways — each deployed live on custom domain subdomains.
         </div>
       </div>
 
@@ -275,7 +297,7 @@
         </div>
         <div class="exp-card-date">2023 &mdash; Present</div>
         <div class="exp-card-desc">
-          Architected scalable HR management systems, campus placement platforms,
+          Architected HR management systems, campus placement platforms,
           and ERP rental portals with JWT authentication, role-based access control,
           and real-time analytics dashboards.
         </div>
@@ -355,21 +377,17 @@
         </div>
 
         <div class="pc-body">
-          <span class="label">Challenge:</span> High manual overhead in writing unit test suites
-          consumed engineering cycles better spent on features.<br /><br />
-          <span class="label">Solution:</span> Built an intelligent QA pipeline using Python AST
-          parsing sandboxes and Gemini 2.5 Flash to auto-generate Playwright scripts from plain
-          English descriptions.<br /><br />
-          <span class="label">Impact:</span> Created an automated CI/CD safety check engine that
-          isolates risk factors prior to code delivery.
+          <span class="label">Why It Was Built:</span> Writing browser test scripts by hand is slow, repetitive, and error-prone for software teams.<br /><br />
+          <span class="label">How It Works:</span> TestForge AI uses Gemini 2.5 Flash and Python code sandboxes to automatically transform plain English descriptions into ready-to-run Playwright automated test scripts.<br /><br />
+          <span class="label">Real Impact:</span> Saves developers hours of manual testing time, catching bugs early before code is delivered.
         </div>
 
         <div class="pc-footer">
-          <a class="pc-link" href="https://github.com/ChiragVasava/TestForge-AI" target="_blank">
+          <a class="pc-link" href="https://github.com/ChiragVasava/TestForge-AI" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
-          <a class="pc-link live" href="https://testforge-ai-lime.vercel.app/" target="_blank">
+          <a class="pc-link live" href="https://testforge.chiragvasava.me" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Live Demo
           </a>
@@ -404,20 +422,17 @@
         </div>
 
         <div class="pc-body">
-          <span class="label">Challenge:</span> Fragmented employee tracking systems created
-          administrative lag — check-ins in spreadsheets, payroll in a separate tool.<br /><br />
-          <span class="label">Solution:</span> Constructed a secure full-stack MERN HRMS with JWT
-          role-based access, real-time attendance calendar, and automated payroll engine.<br /><br />
-          <span class="label">Impact:</span> Streamlined check-in flows, unified payroll, and
-          centralized balance deduction charts — eliminating cross-tool context switching.
+          <span class="label">Why It Was Built:</span> Small organizations waste time tracking attendance on paper or spreadsheets and managing payroll separately.<br /><br />
+          <span class="label">How It Works:</span> DayFlow is a full-stack MERN HR management platform with secure log-in roles (Admin/Employee), live attendance calendars, leave balance tracking, and automated salary calculation.<br /><br />
+          <span class="label">Real Impact:</span> Streamlines daily check-ins and unifies employee payroll into one easy, centralized tool.
         </div>
 
         <div class="pc-footer">
-          <a class="pc-link" href="https://github.com/ChiragVasava/DayFlow" target="_blank">
+          <a class="pc-link" href="https://github.com/ChiragVasava/DayFlow" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
-          <a class="pc-link live" href="https://day-flow-eight.vercel.app/" target="_blank">
+          <a class="pc-link live" href="https://dayflow.chiragvasava.me" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Live Demo
           </a>
@@ -450,28 +465,66 @@
         </div>
 
         <div class="pc-body">
-          <span class="label">Challenge:</span> Chaotic spreadsheet management during collegiate
-          recruitment drives caused missed deadlines and lost applicant data.<br /><br />
-          <span class="label">Solution:</span> Orchestrated a Next.js 15 placement platform using
-          Prisma ORM and PostgreSQL to track full drive lifecycle — creation through offer
-          acceptance.<br /><br />
-          <span class="label">Impact:</span> Gemini-powered ATS resume matching automates
-          qualification processing, turning manual shortlisting into an intelligent, auditable pipeline.
+          <span class="label">Why It Was Built:</span> College placement drives get chaotic when managing hundreds of student applications across spreadsheets.<br /><br />
+          <span class="label">How It Works:</span> UniNest AI is a modern campus recruitment OS built on Next.js 15 and PostgreSQL. It features an AI-powered resume scanner (Gemini ATS) that automatically scores student skills against job criteria.<br /><br />
+          <span class="label">Real Impact:</span> Automates candidate shortlisting, making collegiate placement drives fast, organized, and transparent.
         </div>
 
         <div class="pc-footer">
-          <a class="pc-link" href="https://github.com/ChiragVasava/UniNest-AI" target="_blank">
+          <a class="pc-link" href="https://github.com/ChiragVasava/UniNest-AI" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
-          <a class="pc-link live" href="https://uninest-mu.vercel.app/" target="_blank">
+          <a class="pc-link live" href="https://uninest.chiragvasava.me" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Live Demo
           </a>
         </div>
       </div>
 
-      <!-- ── #4 RentFlow ── -->
+      <!-- ── #4 PlayLoud ── -->
+      <div class="project-card fade-in">
+        <div class="pc-header">
+          <div class="pc-avatar">🎵</div>
+          <div class="pc-title-wrap">
+            <div class="pc-title">PlayLoud</div>
+            <div class="pc-category">Web Audio Streaming Platform</div>
+          </div>
+        </div>
+
+        <div class="pc-tech">
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js"
+              style="background:#1a2233;border-radius:2px;" /> Next.js
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/appwrite/F02E65" alt="Appwrite" /> Appwrite
+          </span>
+          <span class="pc-tech-badge">
+            <img src="https://cdn.simpleicons.org/razorpay/02042B" alt="Razorpay"
+              style="background:#e2e8f0;border-radius:2px;" /> Razorpay
+          </span>
+        </div>
+
+        <div class="pc-body">
+          <span class="label">Why It Was Built:</span> Standard web music players often stop playing or lose your place when switching pages.<br /><br />
+          <span class="label">How It Works:</span> PlayLoud is a web audio streaming application built with Next.js and Appwrite. It includes persistent audio playback across pages, custom playlist management, and Razorpay premium subscriptions.<br /><br />
+          <span class="label">Real Impact:</span> Delivers a continuous, interruption-free music listening experience with instant playlist saving.
+        </div>
+
+        <div class="pc-footer">
+          <a class="pc-link" href="https://github.com/ChiragVasava/PlayLoud" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a class="pc-link live" href="https://playloud.chiragvasava.me" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- ── #5 RentFlow ── -->
       <div class="project-card fade-in">
         <div class="pc-header">
           <div class="pc-avatar">🏭</div>
@@ -498,67 +551,17 @@
         </div>
 
         <div class="pc-body">
-          <span class="label">Challenge:</span> Complex multi-tenant coordination in equipment
-          rental — vendors, customers, and admins without a unified order-state view created
-          billing disputes.<br /><br />
-          <span class="label">Solution:</span> ERP-style portal with role-differentiated dashboards
-          and Razorpay integration for real-time booking confirmations.<br /><br />
-          <span class="label">Impact:</span> Automated booking checks, multi-role vendor workflows,
-          and instant invoice creation — replacing manual coordination with a single truth source.
+          <span class="label">Why It Was Built:</span> Built during the Odoo &times; GCET Hackathon 2026. Managing equipment rentals manually leads to overbooking and payment disputes.<br /><br />
+          <span class="label">How It Works:</span> RentFlow is an ERP rental portal with time-based pricing, reservation engines that prevent double-booking, multi-role dashboards (Admin, Vendor, Customer), and Razorpay payments.<br /><br />
+          <span class="label">Real Impact:</span> Automates rental bookings, invoice generation, and return tracking from listing to final payment.
         </div>
 
         <div class="pc-footer">
-          <a class="pc-link" href="https://github.com/ChiragVasava/RentFlow" target="_blank">
+          <a class="pc-link" href="https://github.com/ChiragVasava/RentFlow" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
-          <a class="pc-link live" href="https://rent-flow-theta.vercel.app/" target="_blank">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            Live Demo
-          </a>
-        </div>
-      </div>
-
-      <!-- ── #5 PlayLoud ── -->
-      <div class="project-card fade-in">
-        <div class="pc-header">
-          <div class="pc-avatar">🎵</div>
-          <div class="pc-title-wrap">
-            <div class="pc-title">PlayLoud</div>
-            <div class="pc-category">Web Audio Streaming Platform</div>
-          </div>
-        </div>
-
-        <div class="pc-tech">
-          <span class="pc-tech-badge">
-            <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js"
-              style="background:#1a2233;border-radius:2px;" /> Next.js
-          </span>
-          <span class="pc-tech-badge">
-            <img src="https://cdn.simpleicons.org/appwrite/F02E65" alt="Appwrite" /> Appwrite
-          </span>
-          <span class="pc-tech-badge">
-            <img src="https://cdn.simpleicons.org/razorpay/02042B" alt="Razorpay"
-              style="background:#e2e8f0;border-radius:2px;" /> Razorpay
-          </span>
-        </div>
-
-        <div class="pc-body">
-          <span class="label">Challenge:</span> Interrupted listening states and complex subscription
-          processing on standard media platforms created immersion-breaking friction.<br /><br />
-          <span class="label">Solution:</span> Fluid web audio layer using Appwrite cloud storage
-          for media management, premium Razorpay subscription hooks, and persistent client-side
-          playback state.<br /><br />
-          <span class="label">Impact:</span> Persistent playback and customized playlist caching —
-          a seamless, interruption-free experience with instant session restoration.
-        </div>
-
-        <div class="pc-footer">
-          <a class="pc-link" href="https://github.com/ChiragVasava/PlayLoud" target="_blank">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a class="pc-link live" href="https://play-loud-azure.vercel.app/" target="_blank">
+          <a class="pc-link live" href="https://rent-flow-theta.vercel.app/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Live Demo
           </a>
@@ -588,22 +591,17 @@
         </div>
 
         <div class="pc-body">
-          <span class="label">Challenge:</span> Friction-heavy support paths blocked simple creator
-          tip flows — high fees, KYC delays, and complex dashboards discouraged micro-donations.<br /><br />
-          <span class="label">Solution:</span> Decoupled crowdfunding checkout utility built on
-          Next.js, optimized for direct micro-donations through a streamlined Razorpay
-          integration.<br /><br />
-          <span class="label">Impact:</span> Removed financial middleware steps — giving creators
-          immediate payment confirmations and making supporter appreciation as frictionless as
-          sending a message.
+          <span class="label">Why It Was Built:</span> Traditional creator support platforms charge high fees and have complex, slow sign-up forms.<br /><br />
+          <span class="label">How It Works:</span> GET ME A CHAI is a lightweight crowdfunding checkout tool built with Next.js. It lets supporters send direct micro-donations ("chai tips") to creators instantly via Razorpay.<br /><br />
+          <span class="label">Real Impact:</span> Removes payment hurdles so fans can appreciate creators as easily as sending a message.
         </div>
 
         <div class="pc-footer">
-          <a class="pc-link" href="https://github.com/ChiragVasava/GET-ME-A-CHAI" target="_blank">
+          <a class="pc-link" href="https://github.com/ChiragVasava/GET-ME-A-CHAI" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
-          <a class="pc-link live" href="https://get-me-a-chai-one.vercel.app/" target="_blank">
+          <a class="pc-link live" href="https://get-me-a-chai-one.vercel.app/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             Live Demo
           </a>
@@ -645,7 +643,11 @@
       <div class="footer-tagline">Full Stack Developer &amp; AI Builder · MSU Baroda</div>
 
       <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/chirag-vasava-050784273/" target="_blank"
+        <a href="https://chiragvasava.me" target="_blank" rel="noopener noreferrer"
+           aria-label="Website" title="chiragvasava.me Profile Website">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/chirag-vasava-050784273/" target="_blank" rel="noopener noreferrer"
            aria-label="LinkedIn">
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
@@ -676,7 +678,8 @@
   <div class="footer-bottom">
     <p>
       Made with <span class="heart">❤️</span> by Chirag &nbsp;&bull;&nbsp;
-      &copy; 2025 Chirag Vasava &nbsp;&bull;&nbsp; Handcrafted with passion ☕
+      &copy; 2026 Chirag Vasava &nbsp;&bull;&nbsp; Handcrafted with passion ☕ &nbsp;&bull;&nbsp;
+      <span>Last Updated: August 2026</span>
     </p>
   </div>
 </footer>
